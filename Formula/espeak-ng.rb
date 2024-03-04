@@ -15,8 +15,8 @@ class EspeakNg < Formula
   depends_on "automake" => :build
   depends_on "libtool" => :build
   depends_on "pkg-config" => :build
-  depends_on "anarchivist/espeak-ng/pcaudiolib" => :recommended
-  depends_on "anarchivist/espeak-ng/waywardgeek-sonic" => :recommended
+  depends_on "justinokamoto/espeak-ng/pcaudiolib" => :recommended
+  depends_on "justinokamoto/espeak-ng/waywardgeek-sonic" => :recommended
 
   conflicts_with "espeak", because: "espeak-ng also provides espeak and speak binaries"
 
@@ -44,6 +44,7 @@ class EspeakNg < Formula
       configure_args.append "--with-mbrola=no"
     end
 
+    system "ln", "-s", "./ChangeLog.md", "./ChangeLog"
     system "./autogen.sh"
     system "./configure", *configure_args
     system "make"

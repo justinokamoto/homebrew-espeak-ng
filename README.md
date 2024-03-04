@@ -3,12 +3,12 @@
 This Homebrew tap provides formulae for [eSpeak NG](https://github.com/espeak-ng/espeak-ng),
 a fork of the eSpeak speech synthesizer.
 
-As I remove any build oddities, my goal is to supersede this repo and contribute these formulae back to `homebrew-core`.
+This is a fork of anarchivist's original formulae [here](https://github.com/anarchivist/homebrew-espeak-ng).
 
 ## How do I install these formulae?
-`brew install anarchivist/espeak-ng/<formula>`
+`brew install justinokamoto/espeak-ng/<formula>`
 
-Or `brew tap anarchivist/espeak-ng` and then `brew install <formula>`.
+Or `brew tap justinokamoto/espeak-ng` and then `brew install <formula>`.
 
 ## Documentation
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
